@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@keyframes drawSquiggle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.squiggle-path {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: drawSquiggle 1s ease-out 0.4s forwards;
+}
+
+/* Slow pop with anticipation + overshoot */
+@keyframes slowPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1.1);  /* Overshoot - goes too big */
+  }
+  60% {
+    transform: scale(0.95); /* Anticipation - pulls back */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);    /* Settles at normal size */
+  }
+}
+
+/* Very slow and dramatic */
+@keyframes dramaticPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1.15);  /* Big overshoot */
+  }
+  65% {
+    transform: scale(0.92);  /* Pull back */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Soft and gentle pop (less dramatic) */
+@keyframes gentlePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.05);  /* Small overshoot */
+  }
+  70% {
+    transform: scale(0.98);  /* Tiny pull back */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Custom AOS animation for dramatic pop */
+[data-aos="dramatic-pop"] {
+  opacity: 0;
+  transform: scale(0.7);
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+[data-aos="dramatic-pop"].aos-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
