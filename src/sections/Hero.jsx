@@ -20,7 +20,6 @@ const Hero = () => {
               Hi, I'm{' '}
               <span className="relative inline-block text-indigo-600">
                 Mohammad Said
-                {/* Squiggly Line SVG */}
                 <svg
                   className="absolute -bottom-3 left-0 w-full h-4"
                   viewBox="0 0 350 12"
@@ -29,7 +28,7 @@ const Hero = () => {
                   style={{ overflow: 'visible' }}
                 >
                   <path
-                  id="squigglePath"
+                    id="squigglePath"
                     d="M2 8 Q30 2 58 8 Q86 14 114 8 Q142 2 170 8 Q198 14 226 8 Q254 2 282 8 Q310 14 338 8"
                     stroke="#818CF8"
                     strokeWidth="2.5"
@@ -44,16 +43,16 @@ const Hero = () => {
                   />
                 </svg>
               </span>
-
             </h1>
 
             <p className="text-2xl sm:text-3xl text-gray-700 mb-4 font-semibold">
-              Frontend Web Developer
+              Full Stack Web Developer
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-8 max-w-md">
-              I build clean, responsive, and user-friendly web applications with React.
-              Focused on creating digital experiences that make a difference.
+              I build scalable web applications and AI-integrated platforms, from React
+              frontends and Node.js APIs to LLM-powered features. Focused on shipping
+              real-world solutions that work in production.
             </p>
 
             <div className="flex gap-4 flex-wrap">
@@ -89,17 +88,16 @@ const Hero = () => {
             </div>
             <div className="bg-white border border-gray-200 rounded-xl px-8 py-4 text-center shadow-sm">
               <div className="font-semibold text-gray-900 mb-1">
-                FullStack Developer
+                Full Stack Developer
               </div>
               <div className="text-sm text-gray-500">
-                React · JavaScript · Tailwind
+                React · Node.js · TypeScript · AI
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Add the animation CSS */}
       <style>{`
         @keyframes drawSquiggle {
           to {

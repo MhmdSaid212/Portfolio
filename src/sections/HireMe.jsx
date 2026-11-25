@@ -1,64 +1,64 @@
 import React from 'react'
-import { 
-  FaRocket, FaBrain, FaCode, FaSearch, FaHandshake, 
-  FaChartLine, FaUsers, FaClock 
+import {
+  FaLayerGroup, FaRobot, FaCode, FaVial, FaHandshake,
+  FaLock, FaSitemap, FaClock
 } from 'react-icons/fa'
 
 const HireMe = () => {
   const reasons = [
     {
-      icon: FaRocket,
-      title: 'Modern Frontend Foundation',
-      description: 'Strong command of React, modern JavaScript, and responsive design principles to build scalable, performant applications.',
+      icon: FaLayerGroup,
+      title: 'True Full Stack',
+      description: 'I work across the stack: React, Next.js and TypeScript on the front, Node.js, FastAPI, Django and Laravel on the back, with SQL and NoSQL databases underneath.',
       color: 'text-indigo-600',
       bgColor: 'bg-indigo-50'
     },
     {
-      icon: FaBrain,
-      title: 'Rapid Learner & Adaptable',
-      description: 'Quick to master new technologies and frameworks. I see unfamiliar tools as opportunities, not obstacles, and stay current with industry trends.',
+      icon: FaRobot,
+      title: 'AI-Ready Developer',
+      description: 'Experience integrating LLMs and AI APIs into real products, plus prompt engineering, RAG, and agent-style workflows that go beyond a demo.',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50'
     },
     {
       icon: FaCode,
-      title: 'Clean Code Advocate',
-      description: 'Commitment to writing maintainable, well-documented, and testable code. I write components that the next developer will thank you for.',
+      title: 'Clean Architecture',
+      description: 'I apply SOLID principles, Clean Architecture, and design patterns so codebases stay maintainable as they grow.',
       color: 'text-green-600',
       bgColor: 'bg-green-50'
     },
     {
-      icon: FaSearch,
-      title: 'Problem-Solving Mindset',
-      description: 'Methodical approach to debugging and performance optimization. I look for root causes, not just quick fixes, ensuring smooth user experiences.',
+      icon: FaVial,
+      title: 'Test-Driven Quality',
+      description: 'Unit and integration testing with Vitest and Jest, plus CI/CD through GitHub Actions, to catch problems before users do.',
       color: 'text-orange-600',
       bgColor: 'bg-orange-50'
     },
     {
-      icon: FaHandshake,
-      title: 'Collaborative Team Player',
-      description: 'Excellent communication skills and experience working in agile environments. I thrive in cross-functional teams and value diverse perspectives.',
+      icon: FaLock,
+      title: 'Security Minded',
+      description: 'JWT authentication, role-based access control, secure cookies, and validated inputs are part of how I build APIs from day one.',
       color: 'text-red-600',
       bgColor: 'bg-red-50'
     },
     {
-      icon: FaChartLine,
-      title: 'Results-Driven',
-      description: 'Focused on delivering business value through technical solutions. I prioritize features that matter most to users and stakeholders.',
+      icon: FaSitemap,
+      title: 'System Design Exposure',
+      description: 'I have collaborated with senior engineers on system design and production-level practices, from schema design to deployment.',
       color: 'text-teal-600',
       bgColor: 'bg-teal-50'
     },
     {
-      icon: FaUsers,
-      title: 'Mentorship & Knowledge Sharing',
-      description: 'Passionate about helping others grow. I believe strong teams are built on open communication and continuous learning.',
+      icon: FaHandshake,
+      title: 'Agile Team Player',
+      description: 'Comfortable with Scrum, Git workflows, pull requests, and Jira. I communicate clearly and thrive in cross-functional teams.',
       color: 'text-pink-600',
       bgColor: 'bg-pink-50'
     },
     {
       icon: FaClock,
-      title: 'Reliable & Deadline-Driven',
-      description: 'Consistent track record of meeting deadlines and delivering quality work. I take ownership of my tasks and communicate proactively.',
+      title: 'Ships & Learns Fast',
+      description: 'I build, test, document, and deploy on Vercel and Render, and pick up new tools quickly when a project needs them.',
       color: 'text-blue-600',
       bgColor: 'bg-blue-50'
     }
@@ -89,20 +89,15 @@ const HireMe = () => {
               key={idx}
               data-aos="dramatic-pop"
               data-aos-duration="800"
-              data-aos-delay={idx * 100}
+              data-aos-delay={(idx % 4) * 100}
               className="group p-6 rounded-xl border border-gray-200 bg-white transition-all duration-300 hover:border-indigo-300 hover:shadow-lg hover:-translate-y-1"
             >
-              {/* Icon */}
               <div className={`w-12 h-12 rounded-lg ${reason.bgColor} flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110`}>
                 <reason.icon className={`text-xl ${reason.color}`} />
               </div>
-              
-              {/* Title */}
               <h3 className="font-semibold text-gray-900 mb-2 text-base">
                 {reason.title}
               </h3>
-              
-              {/* Description */}
               <p className="text-sm text-gray-600 leading-relaxed">
                 {reason.description}
               </p>
@@ -111,18 +106,16 @@ const HireMe = () => {
         </div>
 
         {/* Bottom Call to Action */}
-        <div className="mt-16 text-center bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8" data-aos="fade-up" data-aos-delay={reasons.length * 100 + 200}>
+        <div className="mt-16 text-center bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8" data-aos="fade-up">
           <h3 className="text-xl font-bold text-gray-900 mb-2">
             Ready to discuss how I can contribute to your team?
           </h3>
           <p className="text-gray-600 mb-4">
-            I'm actively looking for frontend and Fullstack developer roles where I can make an impact
+            I'm actively looking for full stack and AI-focused developer roles where I can make an impact
           </p>
           <button 
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg" 
-            data-aos="fade-up"
-            data-aos-delay={reasons.length * 100 + 200}
           >
             Get in Touch
             <FaHandshake className="text-sm" />

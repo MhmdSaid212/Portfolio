@@ -12,31 +12,34 @@ const About = () => {
               About Me
             </div>
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight" data-aos="fade-up" data-aos-delay="100">
-              Turning ideas into{' '}
-              <span className="text-indigo-600">working interfaces</span>
+              From polished interfaces to{' '}
+              <span className="text-indigo-600">intelligent systems</span>
             </h2>
           </div>
           
           {/* Right Column - Content */}
           <div className="space-y-5">
             <p className="text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
-              I'm a passionate Frontend Developer with a strong foundation in modern web technologies. 
-              My journey began with a curiosity about how websites work, which quickly evolved into 
-              a deep passion for creating engaging user experiences.
+              I'm a Full Stack Developer specializing in React, with hands-on experience
+              building scalable web applications and AI-integrated platforms. I hold a
+              B.S. in Computer Science from Rafik Hariri University and have worked across
+              the whole stack, from e-commerce systems to intelligent dashboards and
+              automation tools.
             </p>
             <p className="text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-              Over the past two years, I've dedicated myself to mastering React and its ecosystem, 
-              building responsive applications that prioritize both aesthetics and functionality. 
-              I believe great design and clean code go hand in hand.
+              Most recently I completed a full-stack and AI internship at The Digital Hub
+              (UNRWA), where I built type-safe applications with React, Next.js and
+              TypeScript, designed REST APIs with Node.js, FastAPI and Django, and shipped
+              LLM-powered features to production. Before that, I built secure REST APIs with
+              role-based access control at IDS.
             </p>
             <p className="text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="300">
-              I'm focused on becoming a full-stack developer while continuing to deepen my frontend 
-              expertise. I thrive in collaborative environments and am always eager to learn new 
-              technologies and best practices. My goal is to build web applications that are 
-              accessible, performant, and a joy to use.
+              I care about clean architecture, testing, and delivering real-world solutions.
+              I apply SOLID principles, write unit tests, and work in Agile teams. I'm also
+              deeply interested in prompt engineering and AI agents, and in making AI genuinely
+              useful inside real products.
             </p>
             
-            {/* Optional: Small decorative element */}
             <div className="pt-4">
               <div className="flex gap-2">
                 <div className="w-44 h-0.5 bg-indigo-600 rounded-full"></div>
