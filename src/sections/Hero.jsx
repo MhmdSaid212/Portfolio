@@ -81,10 +81,12 @@ const Hero = () => {
 
           {/* Right Column - Avatar */}
           <div className="flex flex-col items-center gap-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-xl ring-4 ring-indigo-100">
-              <span className="font-display font-extrabold text-4xl text-white">
-                MS
-              </span>
+            <div className="w-32 h-32 rounded-full overflow-hidden shadow-xl ring-4 ring-indigo-100">
+              <img
+                src="/mohammad-said.jpg"
+                alt="Mohammad Said"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="bg-white border border-gray-200 rounded-xl px-8 py-4 text-center shadow-sm">
               <div className="font-semibold text-gray-900 mb-1">
